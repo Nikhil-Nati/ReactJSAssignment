@@ -5,14 +5,15 @@
   height: 500px;
   width:50%;
   padding: 30px;
-  overflow:scroll
+  
 }
 #displayPic{
   border-radius: 50%;
 }
 #refreshBtn{
   font-size: 25px;
-  
-  
+}
+.infoDiv{
+  height: 200px;
 }
 
