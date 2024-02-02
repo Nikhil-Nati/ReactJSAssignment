@@ -25,19 +25,18 @@ function Details() {
         <img id="displayPic" src={APIdata.picture.large} alt="display picture"/>
         <div className="infoDiv">
             <b>Name : </b><span>{APIdata.name.title}.{APIdata.name.first} {APIdata.name.last}</span><br />
-            <div className="row">
-              <div className="col-lg-4 col-md-4"><b>Gender : </b><span>{APIdata.gender}</span><br /></div>
-            <div className="col-lg-4 col-md-4"><b>Age : </b><span>{APIdata.dob.age}</span><br /></div>
-            <div className="col-lg-4 col-md-4"><b>Phone : </b><span>{APIdata.phone}</span><br /></div>
+            <div className="secInfo">
+              <b>Gender : </b><span>{APIdata.gender}</span><br />
+            <b>Age : </b><span>{APIdata.dob.age}</span><br />
+            <b>Phone : </b><span>{APIdata.phone}</span><br />
             </div>
             <b>Email : </b><span>{APIdata.email}</span><br />
-            <div className="row">
-              <div className="col-lg-6 col-md-6"><b>City : </b><span>{APIdata.location.city}</span><br /></div>
-            <div className="col-lg-6 col-md-6"><b>Country : </b><span>{APIdata.location.country}</span><br /></div>
-            
+            <div className="secInfo">
+              <b>City : </b><span>{APIdata.location.city}</span><br />
+            <b>Country : </b><span>{APIdata.location.country}</span><br />
             </div>
-          </div>
-            <button id="refreshBtn" className="btn btn-info" onClick={fetchData}>Refresh</button>
+        </div>
+            <button id="refreshBtn" onClick={fetchData}>Refresh</button>
         
       </div>}</div>
     ;
